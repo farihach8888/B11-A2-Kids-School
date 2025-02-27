@@ -125,3 +125,89 @@ body {
     width: 400px;
     height: auto;
 }
+
+.curriculum {
+    text-align: center;
+    padding: 60px 50px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.curriculum h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.curriculum-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.curriculum-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.curriculum-card:hover {
+    transform: translateY(-5px);
+}
+
+.curriculum-card img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.curriculum-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.curriculum-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    color: #0096ff;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Carousel Navigation Buttons */
+.carousel-buttons {
+    margin-top: 20px;
+}
+
+.carousel-buttons button {
+    background-color: #fcb900;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 5px;
+}
+
+.carousel-buttons button:hover {
+    background-color: #e69500;
+}
