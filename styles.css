@@ -7,6 +7,7 @@
 
 body {
     background-color: #ffffff;
+    
 }
 
 .navbar {
@@ -210,4 +211,280 @@ body {
 
 .carousel-buttons button:hover {
     background-color: #e69500;
+}
+
+
+
+/* Section Styling */
+.stories-section {
+    max-width: 1100px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+
+/* .section-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+} */
+.section-title {
+    font-size: 32px;  /* Make it more prominent */
+    font-weight: bold;
+    text-align: center;
+    color: #222;  /* Ensure text color is visible */
+    margin-bottom: 30px;
+    display: block;  /* Ensure it’s visible */
+}
+
+/* Stories Container */
+.stories-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Large Story Card */
+.story-card.large {
+    width: 48%;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.story-card.large .image-wrapper {
+    position: relative;
+}
+
+.story-card.large img {
+    width: 100%;
+    display: block;
+}
+
+.story-card.large .story-content {
+    padding: 15px;
+}
+
+.story-card.large h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.story-card.large p {
+    font-size: 14px;
+    color: #555;
+}
+
+.story-content {
+    padding: 15px;
+    text-align: left;
+    background: white;
+}
+
+.story-content h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #222;
+}
+
+.story-content p {
+    font-size: 14px;
+    color: #555;
+}
+
+
+
+/* Small Stories Grid */
+.stories-grid {
+    width: 48%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.story-card.small {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.story-card.small .image-wrapper {
+    position: relative;
+}
+
+.story-card.small img {
+    width: 100%;
+    display: block;
+}
+
+.story-card.small .story-content {
+    padding: 15px;
+}
+
+.story-card.small h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.date {
+    position:middle;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.story-card.large .date {
+    bottom: 15px;
+    left: 15px;
+}
+
+.story-card.small .date {
+    top: 10px;
+    left: 10px;
+}
+
+
+.blue { background: #17a2b8; }  
+.green { background: #28a745; } 
+.purple { background: #6f42c1; } 
+.yellow { background: #ffc107; } 
+
+
+.view-all-btn {
+    display: block;
+    margin: 30px auto;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-all-btn:hover {
+    background: #444;
+}
+
+/* Footer General Styles */
+footer {
+    padding: 40px 50px;
+    background-color: #00AEEF;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allows sections to wrap if needed */
+    gap: 50px; /* Spacing between sections */
+}
+
+/* Left Section: Brand */
+.footer-section.brand {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 350px;
+}
+
+.brand-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand .logo {
+    width: 50px;
+    height: auto;
+}
+
+.brand-description {
+    margin-top: 10px;
+    color: white;
+    max-width: 350px;
+}
+
+/* Middle and Right Sections */
+.footer-section {
+    flex: 1;
+    text-align: left;
+    min-width: 200px;
+}
+
+h2, h3 {
+    margin: 10px 0;
+    color: white;
+}
+
+p {
+    max-width: 350px;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive Fixes */
+@media (min-width: 900px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr; /* Three sections: left, middle, right */
+    }
+}
+
+@media (max-width: 900px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-section.brand {
+        align-items: center;
+    }
 }
